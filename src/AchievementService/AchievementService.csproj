@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="5.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.12" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AchievementService.Broker\AchievementService.Broker.csproj" />
+    <ProjectReference Include="..\AchievementService.Business\AchievementService.Business.csproj" />
+    <ProjectReference Include="..\AchievementService.Data.Provider.MsSql.Ef\AchievementService.Data.Provider.MsSql.Ef.csproj" />
+    <ProjectReference Include="..\AchievementService.Data\AchievementService.Data.csproj" />
+    <ProjectReference Include="..\AchievementService.Mappers\AchievementService.Mappers.csproj" />
+    <ProjectReference Include="..\AchievementService.Models.Db\AchievementService.Models.Db.csproj" />
+    <ProjectReference Include="..\AchievementService.Models.Dto\AchievementService.Models.Dto.csproj" />
+    <ProjectReference Include="..\AchievementService.Validation\AchievementService.Validation.csproj" />
+  </ItemGroup>
+
+</Project>
