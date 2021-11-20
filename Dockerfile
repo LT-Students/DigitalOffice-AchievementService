@@ -11,4 +11,4 @@ FROM mcr.microsoft.com/dotnet/aspnet:5.0-buster-slim AS base
 WORKDIR /app
 COPY --from=build /app/out .
 EXPOSE 80
-ENTRYPOINT ["dotnet", "LT.DigitalOffice.CompanyService.dll"]
+ENTRYPOINT ["dotnet", "LT.DigitalOffice.AchievementService.dll"]

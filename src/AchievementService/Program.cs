@@ -1,3 +1,4 @@
+﻿using AchievementService;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
@@ -7,7 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace AchievementService
+namespace LT.DigitalOffice.AchievementService
 {
     public class Program
     {

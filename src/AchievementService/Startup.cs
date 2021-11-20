@@ -11,7 +11,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
-namespace AchievementService
+namespace LT.DigitalOffice.AchievementService
 {
     public class Startup
     {
