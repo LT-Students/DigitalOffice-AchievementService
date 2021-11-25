@@ -2,21 +2,15 @@
 
   <Import Project="$(ProjectDir)..\..\Common.Configurations.targets" />
 
-  <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
-  </PropertyGroup>
-
   <ItemGroup>
-    <Folder Include="Consumers\" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.12" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <ProjectReference Include="..\AchievementService.Business\AchievementService.Business.csproj" />
     <ProjectReference Include="..\AchievementService.Data\AchievementService.Data.csproj" />
     <ProjectReference Include="..\AchievementService.Mappers\AchievementService.Mappers.csproj" />
+    <ProjectReference Include="..\AchievementService.Models.Db\AchievementService.Models.Db.csproj" />
   </ItemGroup>
 
 </Project>

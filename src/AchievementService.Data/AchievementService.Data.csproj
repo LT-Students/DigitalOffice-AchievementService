@@ -2,21 +2,8 @@
 
   <Import Project="$(ProjectDir)..\..\Common.Configurations.targets" />
 
-  <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <Folder Include="Interfaces\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.12" />
-  </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\AchievementService.Data.Provider.MsSql.Ef\AchievementService.Data.Provider.MsSql.Ef.csproj" />
-    <ProjectReference Include="..\AchievementService.Data.Provider\AchievementService.Data.Provider.csproj" />
     <ProjectReference Include="..\AchievementService.Models.Db\AchievementService.Models.Db.csproj" />
     <ProjectReference Include="..\AchievementService.Models.Dto\AchievementService.Models.Dto.csproj" />
   </ItemGroup>
