@@ -153,13 +153,6 @@ namespace LT.DigitalOffice.AchievementService
           builder =>
           {
             builder
-              //.WithOrigins(
-              //    "https://*.ltdo.xyz",
-              //    "http://*.ltdo.xyz",
-              //    "http://ltdo.xyz",
-              //    "http://ltdo.xyz:9802",
-              //    "http://localhost:4200",
-              //    "http://localhost:4500")
               .AllowAnyOrigin()
               .AllowAnyHeader()
               .AllowAnyMethod();
@@ -249,9 +242,7 @@ namespace LT.DigitalOffice.AchievementService
         .AddControllers(options =>
         {
           options.InputFormatters.Insert(0, GetJsonPatchInputFormatter());
-        }) // TODO check enum serialization from request without .AddJsonOptions()
-           //this will be used when all validation takes place on the pipeline
-           //.AddFluentValidation(x => x.RegisterValidatorsFromAssembly(Assembly.LoadFrom(path)))
+        })
         .AddFluentValidation()
         .AddJsonOptions(options =>
         {

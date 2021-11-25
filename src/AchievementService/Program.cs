@@ -28,7 +28,7 @@ namespace LT.DigitalOffice.AchievementService
 
       Log.Logger = new LoggerConfiguration().ReadFrom
         .Configuration(configuration)
-        .Enrich.WithProperty("Service", "UserService")
+        .Enrich.WithProperty("Service", "AchievementService")
         .WriteTo.Seq(
           serverUrl: seqServerUrl,
           apiKey: seqApiKey)
@@ -50,10 +50,10 @@ namespace LT.DigitalOffice.AchievementService
 
     public static IHostBuilder CreateHostBuilder(string[] args) =>
       Host.CreateDefaultBuilder(args)
-          .UseSerilog()
-          .ConfigureWebHostDefaults(webBuilder =>
-          {
-            webBuilder.UseStartup<Startup>();
-          });
+        .UseSerilog()
+        .ConfigureWebHostDefaults(webBuilder =>
+        {
+          webBuilder.UseStartup<Startup>();
+        });
   }
 }

@@ -15,14 +15,10 @@
     <ProjectReference Include="..\AchievementService.Business\AchievementService.Business.csproj" />
     <ProjectReference Include="..\AchievementService.Models.Dto\AchievementService.Models.Dto.csproj" />
     <ProjectReference Include="..\AchievementService.Validation\AchievementService.Validation.csproj" />
-    <ProjectReference Include="..\AchievementService.Broker\AchievementService.Broker.csproj" />
-    <ProjectReference Include="..\AchievementService.Business\AchievementService.Business.csproj" />
     <ProjectReference Include="..\AchievementService.Data.Provider.MsSql.Ef\AchievementService.Data.Provider.MsSql.Ef.csproj" />
     <ProjectReference Include="..\AchievementService.Data\AchievementService.Data.csproj" />
     <ProjectReference Include="..\AchievementService.Mappers\AchievementService.Mappers.csproj" />
     <ProjectReference Include="..\AchievementService.Models.Db\AchievementService.Models.Db.csproj" />
-    <ProjectReference Include="..\AchievementService.Models.Dto\AchievementService.Models.Dto.csproj" />
-    <ProjectReference Include="..\AchievementService.Validation\AchievementService.Validation.csproj" />
   </ItemGroup>
 
 </Project>
