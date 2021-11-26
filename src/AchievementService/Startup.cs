@@ -209,6 +209,7 @@ namespace LT.DigitalOffice.AchievementService
       services.Configure<TokenConfiguration>(Configuration.GetSection("CheckTokenMiddleware"));
       services.Configure<BaseServiceInfoConfig>(Configuration.GetSection(BaseServiceInfoConfig.SectionName));
       services.Configure<BaseRabbitMqConfig>(Configuration.GetSection(BaseRabbitMqConfig.SectionName));
+
       services.Configure<ForwardedHeadersOptions>(options =>
       {
         options.ForwardedHeaders =
