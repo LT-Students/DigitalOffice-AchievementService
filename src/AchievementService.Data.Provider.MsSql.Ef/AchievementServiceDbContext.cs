@@ -42,6 +42,5 @@ namespace LT.DigitalOffice.AchievementService.Data.Provider.MsSql.Ef
     {
       await SaveChangesAsync();
     }
-
   }
 }
