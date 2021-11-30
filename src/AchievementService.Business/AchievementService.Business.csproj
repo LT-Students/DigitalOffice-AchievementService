@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="$(ProjectDir)..\..\Common.Configurations.targets" />
+
+  <ItemGroup>
+    <ProjectReference Include="..\AchievementService.Data\AchievementService.Data.csproj" />
+    <ProjectReference Include="..\AchievementService.Mappers\AchievementService.Mappers.csproj" />
+    <ProjectReference Include="..\AchievementService.Validation\AchievementService.Validation.csproj" />
+  </ItemGroup>
+
+</Project>

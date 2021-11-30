@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="$(ProjectDir)..\..\Common.Configurations.targets" />
+
+  <ItemGroup>
+    <ProjectReference Include="..\AchievementService.Data\AchievementService.Data.csproj" />
+    <ProjectReference Include="..\AchievementService.Models.Dto\AchievementService.Models.Dto.csproj" />
+  </ItemGroup>
+
+</Project>

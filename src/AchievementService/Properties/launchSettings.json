@@ -1,0 +1,13 @@
+﻿{
+  "profiles": {
+    "AchievementService": {
+      "commandName": "Project",
+      "externalUrlConfiguration": true,
+      "environmentVariables": {
+        "RabbitMqUsername": "guest",
+        "RabbitMqPassword": "guest",
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
